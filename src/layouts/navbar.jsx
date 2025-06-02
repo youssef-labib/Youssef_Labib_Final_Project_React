@@ -25,7 +25,7 @@ const Navbar = () => {
     return (
         <>
             {/* Top bar */}
-            <div className="hidden md:flex bg-[#f5f5f5] p-4 text-center flex-col md:flex-row items-center justify-center md:gap-[24.7rem] text-sm leading-[22px] text-[#888]">
+            <div className="z-50 hidden md:flex bg-[#f5f5f5] p-4 text-center flex-col md:flex-row items-center justify-center md:gap-[24.7rem] text-sm leading-[22px] text-[#888]">
                 <div className="flex items-center justify-center gap-4 text-[19px] mb-2 md:mb-0">
                     <a href="" className="hover:text-[#e65540] transition-colors"><FaFacebookF /></a>
                     <a href="" className="hover:text-[#e65540] transition-colors"><FaTwitter /></a>
@@ -47,7 +47,7 @@ const Navbar = () => {
             </div>
 
             {/* Main Navbar */}
-            <div id="navbar" className="sticky top-0 overflow-hidden bg-white h-[4.5rem] flex items-center justify-between px-4 md:justify-center md:gap-[23rem] text-[15px] leading-[26px] shadow-[rgba(17,_17,_26,_0.1)_0px_4px_16px,_rgba(17,_17,_26,_0.1)_0px_8px_24px,_rgba(17,_17,_26,_0.1)_0px_16px_56px]">
+            <div id="navbar" className="z-50 sticky top-0 overflow-hidden bg-white h-[4.5rem] flex items-center justify-between px-4 md:justify-center md:gap-[23rem] text-[15px] leading-[26px] shadow-[rgba(17,_17,_26,_0.1)_0px_4px_16px,_rgba(17,_17,_26,_0.1)_0px_8px_24px,_rgba(17,_17,_26,_0.1)_0px_16px_56px]">
                 <div>
                     <img src={Images.logo} alt="Fashe Logo" />
                 </div>
