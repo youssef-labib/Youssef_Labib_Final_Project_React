@@ -24,7 +24,6 @@ const Navbar = () => {
 
     return (
         <>
-            {/* Top bar */}
             <div className="z-50 hidden md:flex bg-[#f5f5f5] p-4 text-center flex-col md:flex-row items-center justify-center md:gap-[24.7rem] text-sm leading-[22px] text-[#888]">
                 <div className="flex items-center justify-center gap-4 text-[19px] mb-2 md:mb-0">
                     <a href="" className="hover:text-[#e65540] transition-colors"><FaFacebookF /></a>
@@ -46,12 +45,11 @@ const Navbar = () => {
                 </div>
             </div>
 
-            {/* Main Navbar */}
             <div id="navbar" className="z-50 sticky top-0 overflow-hidden bg-white h-[4.5rem] flex items-center justify-between px-4 md:justify-center md:gap-[23rem] text-[15px] leading-[26px] shadow-[rgba(17,_17,_26,_0.1)_0px_4px_16px,_rgba(17,_17,_26,_0.1)_0px_8px_24px,_rgba(17,_17,_26,_0.1)_0px_16px_56px]">
                 <div>
                     <img src={Images.logo} alt="Fashe Logo" />
                 </div>
-                {/* Desktop Menu */}
+
                 <div className="hidden md:flex items-center justify-center gap-6 text-[#333]">
                     {menuItems.map(item => (
                         <a key={item.name} href={item.href} className="transition-all duration-300 relative after:content-[''] after:absolute after:w-0 after:h-[1px] after:bottom-0 after:left-0 after:bg-black after:transition-width after:duration-300 hover:after:w-full">{item.name}</a>
@@ -63,21 +61,19 @@ const Navbar = () => {
                         <span>|</span>
                         <a href=""><img src={Images.iconheader2} alt="Cart" /></a>
                     </div>
-                    {/* Mobile Menu Button */}
+
                     <button onClick={toggleMenu} className="text-2xl md:hidden ml-2">
                         <RxHamburgerMenu />
                     </button>
                 </div>
             </div>
 
-            {/* Mobile Fullscreen Menu & Overlay */}
-            {/* Overlay */}
             <div
                 className={`fixed inset-0 bg-black bg-opacity-50 z-40 transition-opacity duration-300 ${isMenuOpen ? 'opacity-100 visible' : 'opacity-0 invisible'}`}
                 onClick={isMenuOpen ? toggleMenu : undefined}
                 style={{ pointerEvents: isMenuOpen ? 'auto' : 'none' }}
             ></div>
-            {/* Side Menu */}
+
             <div
                 className={`fixed top-0 right-0 h-full w-full max-w-xs bg-white z-50 transform transition-transform duration-300 ease-in-out md:hidden flex flex-col ${isMenuOpen ? 'translate-x-0' : 'translate-x-full'}`}
                 style={{ boxShadow: '0 0 40px rgba(0,0,0,0.15)' }}

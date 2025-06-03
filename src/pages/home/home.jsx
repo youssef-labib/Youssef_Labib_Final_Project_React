@@ -1,6 +1,7 @@
 import React from 'react';
 import HeroSection from './partials/hero';
 import CategoriesPage from './partials/categories';
+import ProductsPage from './partials/products';
 const HomePage = () => {
 
     return (
@@ -8,6 +9,7 @@ const HomePage = () => {
 
             <HeroSection />
             <CategoriesPage />
+            <ProductsPage />
 
         </>
     );
