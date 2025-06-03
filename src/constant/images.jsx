@@ -33,7 +33,7 @@ import logo from "../assets/images/logo.png.webp"
 import mastercard from "../assets/images/mastercard.png.webp"
 import paypal from "../assets/images/paypal.png.webp"
 import shopItem09 from "../assets/images/shop-item-09.jpg"
-import shopi2 from "../assets/images/shopi2.webp"
+import shopy2 from "../assets/images/shopi2.webp"
 import shopy3 from "../assets/images/shopy3.webp"
 import shopy4 from "../assets/images/shopy4.webp"
 import shopy5 from "../assets/images/shopy5.webp"
@@ -80,7 +80,7 @@ export default {
     mastercard,
     paypal,
     shopItem09,
-    shopi2,
+    shopy2,
     shopy3,
     shopy4,
     shopy5,
