@@ -1,82 +1,6 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import Images from '../../../constant/images';
-
-const productData = [
-    {
-        id: 1,
-        image: Images.shopy7,
-        name: 'Boxy7 T-Shirt with Roll Sleeve',
-        price: 20.0,
-        bestSeller: true,
-        featured: false,
-        sale: false,
-    },
-    {
-        id: 2,
-        image: Images.shopy6,
-        name: 'Boxy6 T-Shirt with Roll Sleeve',
-        price: 20.0,
-        bestSeller: true,
-        featured: false,
-        sale: false,
-    },
-    {
-        id: 3,
-        image: Images.shopy5,
-        name: 'Boxy5 T-Shirt with Roll Sleeve',
-        price: 20.0,
-        bestSeller: true,
-        featured: false,
-        sale: false,
-    },
-    {
-        id: 4,
-        image: Images.shopy4,
-        name: 'Boxy4 T-Shirt with Roll Sleeve',
-        price: 20.0,
-        bestSeller: true,
-        featured: false,
-        sale: false,
-    },
-    {
-        id: 5,
-        image: Images.shopy3,
-        name: 'Boxy3 T-Shirt with Roll Sleeve',
-        price: 20.0,
-        oldPrice: 30.0,
-        bestSeller: false,
-        featured: false,
-        sale: true,
-    },
-    {
-        id: 6,
-        image: Images.shopy2,
-        name: 'Boxy2 T-Shirt with Roll Sleeve',
-        price: 20.0,
-        bestSeller: false,
-        featured: false,
-        home: true,
-        sale: false,
-    },
-    {
-        id: 7,
-        image: Images.item03,
-        name: 'Boxy1 T-Shirt with Roll Sleeve',
-        price: 20.0,
-        bestSeller: false,
-        featured: true,
-        sale: false,
-    },
-    {
-        id: 8,
-        image: Images.shopy8,
-        name: 'Boxy T-Shirt with Sleeve Detail',
-        price: 20.0,
-        bestSeller: false,
-        featured: false,
-        sale: false,
-    },
-];
+import productJson from '../../../json/product.json';
 
 const filters = [
     { label: 'All', key: 'all' },
@@ -87,6 +11,15 @@ const filters = [
 
 const ProductsPage = () => {
     const [activeFilter, setActiveFilter] = useState('all');
+    const [productData, setProductData] = useState([]);
+
+    useEffect(() => {
+        const mappedProducts = productJson.map(product => ({
+            ...product,
+            image: Images[product.image]
+        }));
+        setProductData(mappedProducts);
+    }, []);
 
     const filteredProducts =
         activeFilter === 'all'
@@ -94,7 +27,7 @@ const ProductsPage = () => {
             : productData.filter((product) => product[activeFilter]);
 
     return (
-        <div className="max-w-[1200px] mx-auto py-10 px-4 sm:px-8">
+        <div className="max-w-[1200px] mx-auto py-10 px-4 sm:px-8 pb-25">
             <h1 className="text-center font-bold text-3xl tracking-wide mb-6 mt-0 uppercase">
                 FEATURED PRODUCTS
             </h1>

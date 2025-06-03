@@ -6,13 +6,13 @@ import { IoIosArrowForward } from "react-icons/io";
 import Images from "../constant/images"
 
 const menuItems = [
-    { name: 'Home', href: '#home' },
-    { name: 'Shop', href: '#shop' },
+    { name: 'Home', href: '/' },
+    { name: 'Shop', href: '/shop' },
     { name: 'Sale', href: '#sale' },
     { name: 'Features', href: '#features' },
-    { name: 'Blog', href: '#blog' },
-    { name: 'About', href: '#about' },
-    { name: 'Contact', href: '#contact' },
+    { name: 'Blog', href: '/blog' },
+    { name: 'About', href: '/about' },
+    { name: 'Contact', href: '/contact' },
 ];
 
 const Navbar = () => {
@@ -50,7 +50,7 @@ const Navbar = () => {
                     <img src={Images.logo} alt="Fashe Logo" />
                 </div>
 
-                <div className="hidden md:flex items-center justify-center gap-6 text-[#333]">
+                <div className="hidden md:flex items-center justify-center gap-6 text-[#343333]">
                     {menuItems.map(item => (
                         <a key={item.name} href={item.href} className="transition-all duration-300 relative after:content-[''] after:absolute after:w-0 after:h-[1px] after:bottom-0 after:left-0 after:bg-black after:transition-width after:duration-300 hover:after:w-full">{item.name}</a>
                     ))}

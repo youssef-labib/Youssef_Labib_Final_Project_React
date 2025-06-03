@@ -1,0 +1,76 @@
+[
+    {
+        "id": 1,
+        "image": "shopy7",
+        "name": "Boxy7 T-Shirt with Roll Sleeve",
+        "price": 20.0,
+        "bestSeller": true,
+        "featured": false,
+        "sale": false
+    },
+    {
+        "id": 2,
+        "image": "shopy6",
+        "name": "Boxy6 T-Shirt with Roll Sleeve",
+        "price": 20.0,
+        "bestSeller": true,
+        "featured": false,
+        "sale": false
+    },
+    {
+        "id": 3,
+        "image": "shopy5",
+        "name": "Boxy5 T-Shirt with Roll Sleeve",
+        "price": 20.0,
+        "bestSeller": true,
+        "featured": false,
+        "sale": false
+    },
+    {
+        "id": 4,
+        "image": "shopy4",
+        "name": "Boxy4 T-Shirt with Roll Sleeve",
+        "price": 20.0,
+        "bestSeller": true,
+        "featured": false,
+        "sale": false
+    },
+    {
+        "id": 5,
+        "image": "shopy3",
+        "name": "Boxy3 T-Shirt with Roll Sleeve",
+        "price": 20.0,
+        "oldPrice": 30.0,
+        "bestSeller": false,
+        "featured": false,
+        "sale": true
+    },
+    {
+        "id": 6,
+        "image": "shopy2",
+        "name": "Boxy2 T-Shirt with Roll Sleeve",
+        "price": 20.0,
+        "bestSeller": false,
+        "featured": false,
+        "home": true,
+        "sale": false
+    },
+    {
+        "id": 7,
+        "image": "item03",
+        "name": "Boxy1 T-Shirt with Roll Sleeve",
+        "price": 20.0,
+        "bestSeller": false,
+        "featured": true,
+        "sale": false
+    },
+    {
+        "id": 8,
+        "image": "shopy8",
+        "name": "Boxy T-Shirt with Sleeve Detail",
+        "price": 20.0,
+        "bestSeller": false,
+        "featured": false,
+        "sale": false
+    }
+]

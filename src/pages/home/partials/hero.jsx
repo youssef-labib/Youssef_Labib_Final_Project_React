@@ -20,8 +20,11 @@ const HeroSection = () => {
                         style={{ backgroundImage: `url(${Images.carousel1})`, backgroundSize: 'cover', backgroundPosition: 'center' }}
                     >
                         <p className="text-white text-sm sm:text-lg tracking-widest uppercase mb-2">Women Collection 2018</p>
-                        <h1 className="text-white text-3xl sm:text-5xl md:text-6xl lg:text-7xl font-extrabold uppercase drop-shadow-lg mb-6">New Arrivals</h1>
-                        <button className="bg-white text-black rounded-full px-5 sm:px-7 py-2 sm:py-3 font-medium shadow text-xs sm:text-sm hover:bg-[#e65540] hover:text-white transition-colors duration-300">SHOP NOW</button>
+                        <h1 
+                            className="text-white text-xl sm:text-3xl md:text-4xl lg:text-5xl font-extrabold uppercase tracking-wider mb-6" 
+                            style={{ WebkitTextStroke: '2px white' }}
+                        >New Arrivals</h1>
+                        <button className="bg-white text-black rounded-full px-5 sm:px-7 py-2 sm:py-3 font-medium shadow text-xs sm:text-sm hover:bg-[#e65540] hover:text-white transition-colors duration-300 cursor-pointer">SHOP NOW</button>
                     </div>
 
                     <div
@@ -30,8 +33,11 @@ const HeroSection = () => {
                         style={{ backgroundImage: `url(${Images.carousel2})`, backgroundSize: 'cover', backgroundPosition: 'center' }}
                     >
                         <p className="text-white text-sm sm:text-lg tracking-widest uppercase mb-2">Women Collection 2018</p>
-                        <h1 className="text-white text-3xl sm:text-5xl md:text-6xl lg:text-7xl font-extrabold uppercase drop-shadow-lg mb-6">New Arrivals</h1>
-                        <button className="bg-white text-black rounded-full px-5 sm:px-7 py-2 sm:py-3 font-medium shadow text-xs sm:text-sm hover:bg-[#e65540] hover:text-white transition-colors duration-300">SHOP NOW</button>
+                        <h1 
+                            className="text-white text-xl sm:text-3xl md:text-4xl lg:text-5xl font-extrabold uppercase tracking-wider mb-6" 
+                            style={{ WebkitTextStroke: '2px white' }}
+                        >New Arrivals</h1>
+                        <button className="bg-white text-black rounded-full px-5 sm:px-7 py-2 sm:py-3 font-medium shadow text-xs sm:text-sm hover:bg-[#e65540] hover:text-white transition-colors duration-300 cursor-pointer">SHOP NOW</button>
                     </div>
 
                     <div
@@ -40,8 +46,11 @@ const HeroSection = () => {
                         style={{ backgroundImage: `url(${Images.carousel3})`, backgroundSize: 'cover', backgroundPosition: 'center' }}
                     >
                         <p className="text-white text-sm sm:text-lg tracking-widest uppercase mb-2">Women Collection 2018</p>
-                        <h1 className="text-white text-3xl sm:text-5xl md:text-6xl lg:text-7xl font-extrabold uppercase drop-shadow-lg mb-6">New Arrivals</h1>
-                        <button className="bg-white text-black rounded-full px-5 sm:px-7 py-2 sm:py-3 font-medium shadow text-xs sm:text-sm hover:bg-[#e65540] hover:text-white transition-colors duration-300">SHOP NOW</button>
+                        <h1 
+                            className="text-white text-xl sm:text-3xl md:text-4xl lg:text-5xl font-extrabold uppercase tracking-wider mb-6" 
+                            style={{ WebkitTextStroke: '2px white' }}
+                        >New Arrivals</h1>
+                        <button className="bg-white text-black rounded-full px-5 sm:px-7 py-2 sm:py-3 font-medium shadow text-xs sm:text-sm hover:bg-[#e65540] hover:text-white transition-colors duration-300 cursor-pointer">SHOP NOW</button>
                     </div>
                 </div>
                 
