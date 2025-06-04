@@ -5,7 +5,7 @@ const Footer = () => {
     return (
         <footer className="bg-[#f2f2f2] pt-[60px] pb-5 font-montserrat text-[#222] font-normal">
             <div className="max-w-[1400px] mx-auto flex flex-wrap justify-between items-start px-10 gap-y-10">
-                {/* GET IN TOUCH */}
+
                 <div className="flex-[5] w-[350px] mb-0 pr-[50px] flex flex-col items-start">
                     <h3 className="font-bold text-[15px] mb-5">GET IN TOUCH</h3>
                     <div className="text-[13px] mb-7 leading-[1.7] font-normal">
@@ -19,7 +19,7 @@ const Footer = () => {
                         <a href="#" className="text-[#888] text-[18px] font-normal hover:text-[#e65540] transition-colors"><FaInstagram /></a>
                     </div>
                 </div>
-                {/* CATEGORIES */}
+
                 <div className="flex-1 min-w-[180px] mb-0 flex flex-col items-start">
                     <h3 className="font-bold text-[15px] mb-5">CATEGORIES</h3>
                     <ul className="list-none p-0 text-[13px] leading-[2] font-normal">
@@ -29,7 +29,7 @@ const Footer = () => {
                         <li><a href="/" className="text-[#222] no-underline text-[13px] font-normal hover:text-[#e65540] transition-colors">Sunglasses</a></li>
                     </ul>
                 </div>
-                {/* LINKS */}
+
                 <div className="flex-1 min-w-[180px] mb-0 flex flex-col items-start">
                     <h3 className="font-bold text-[15px] mb-5">LINKS</h3>
                     <ul className="list-none p-0 text-[13px] leading-[2] font-normal">
@@ -39,7 +39,7 @@ const Footer = () => {
                         <li><a href="#" className="text-[#222] no-underline text-[13px] font-normal hover:text-[#e65540] transition-colors">Returns</a></li>
                     </ul>
                 </div>
-                {/* HELP */}
+
                 <div className="flex-1 min-w-[180px] mb-0 flex flex-col items-start">
                     <h3 className="font-bold text-[15px] mb-5">HELP</h3>
                     <ul className="list-none p-0 text-[13px] leading-[2] font-normal">
@@ -49,7 +49,7 @@ const Footer = () => {
                         <li><a href="/" className="text-[#222] no-underline text-[13px] font-normal hover:text-[#e65540] transition-colors">FAQs</a></li>
                     </ul>
                 </div>
-                {/* NEWSLETTER */}
+
                 <div className="flex-[1.2] min-w-[300px] mb-0 flex flex-col items-start justify-start">
                     <h3 className="font-bold text-[15px] mb-5">NEWSLETTER</h3>
                     <form className="flex flex-col gap-5 w-full" onSubmit={e => e.preventDefault()}>
@@ -65,7 +65,7 @@ const Footer = () => {
             <div className="text-center mt-10 text-[#888] text-[15px] pt-12 pb-8">
                 Copyright © 2022 <a className="text-[#222] font-medium hover:text-[#e65540] transition-colors cursor-pointer">Shopify Theme Developed by Youssef Labib</a> All rights reserved.
             </div>
-            {/* Scroll to top button */}
+
             <button className="fixed bottom-[30px] right-[30px] bg-[#888] hover:bg-[#e65540] transition-colors text-white border-none rounded-[8px] w-[45px] h-[45px] text-[28px] cursor-pointer z-[1000]" onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}>
                 <span className="inline-block">&#8593;</span>
             </button>
