@@ -1,7 +1,16 @@
 import React from 'react';
 import Images from '../../../constant/images'
+import emailjs from '@emailjs/browser'
+
 
 const FormPage = () => {
+
+    const sendEmail = (e) => {
+        e.preventDefault()
+
+        emailjs.sendForm('service_mmcwzcp', 'template_lkxqq2r', e.target, 'tKZSsK844BC4zJ_8f')
+    }
+
     return (
         <div>
             <div className="top-title flex justify-center h-60 items-center" style={{ backgroundImage: `url(${Images.topweb})`, backgroundSize: 'cover', backgroundPosition: 'center' }}>

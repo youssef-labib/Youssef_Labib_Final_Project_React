@@ -6,6 +6,7 @@ import { IoIosArrowForward } from "react-icons/io";
 import Images from "../constant/images"
 import { useCart } from '../context/CartContext';
 import Cart from '../pages/shop/partials/Cart';
+import { useNavigate } from 'react-router-dom';
 
 const menuItems = [
     { name: 'Home', href: '/' },
@@ -20,6 +21,7 @@ const menuItems = [
 const Navbar = () => {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
     const { toggleCart, getTotalItems } = useCart();
+    const navigate = useNavigate();
 
     const toggleMenu = () => {
         setIsMenuOpen(!isMenuOpen);
@@ -60,7 +62,7 @@ const Navbar = () => {
                 </div>
                 <div className="flex items-center gap-4">
                     <div className="flex items-center justify-center gap-4 text-[#f5f5f5]">
-                        <a href=""><img src={Images.iconheader1} alt="Search" /></a>
+                        <a onClick={() => navigate('/access')} style={{ cursor: 'pointer' }}><img src={Images.iconheader1} alt="Search" /></a>
                         <span>|</span>
                         <button 
                             onClick={toggleCart} 
@@ -94,7 +96,7 @@ const Navbar = () => {
                 <div className="flex items-center justify-between px-6 py-4 border-b">
                     <img src={Images.logo} alt="Fashe Logo" className="h-8" />
                     <div className="flex items-center gap-4">
-                        <a href=""><img src={Images.iconheader1} alt="Search" className="h-6" /></a>
+                        <a onClick={() => navigate('/access')} style={{ cursor: 'pointer' }}><img src={Images.iconheader1} alt="Search" className="h-6" /></a>
                         <button onClick={toggleCart} className="relative">
                             <img src={Images.iconheader2} alt="Cart" className="h-6" />
                             {getTotalItems() > 0 && (

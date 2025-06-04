@@ -8,6 +8,7 @@ import ShopPage from './pages/shop/shop'
 import BlogPage from './pages/blog/blog'
 import AboutPage from './pages/about/about'
 import ContactPage from './pages/contact/contact'
+import AccessPage from './pages/access/access'
 import { CartProvider } from './context/CartContext';
 
 const App = () => {
@@ -22,6 +23,7 @@ const App = () => {
         <Route path="/blog" element={<BlogPage />} />
         <Route path="/about" element={<AboutPage />} />
         <Route path="/contact" element={<ContactPage />} />
+        <Route path="/access" element={<AccessPage />} />
       </Routes>
 
       <Footer />
