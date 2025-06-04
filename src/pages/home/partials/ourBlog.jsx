@@ -21,15 +21,16 @@ const OurBlog = () => {
                             <div className="pt-4">
                                 <a 
                                     href="#" 
-                                    className="text-[16px] font-bold text-gray-900 hover:text-gray-700 block mb-2"
+                                    className="text-[16px] font-bold text-gray-900 hover:text-[#e65540] transition-colors block mb-2"
                                 >
                                     {post.title}
                                 </a>
                                 
                                 <div className="text-[13px] text-gray-500 mb-3">
-                                    <span>{post.author}</span>
-                                    <span className="mx-2">•</span>
-                                    <span>{post.date}</span>
+                                    by
+                                    <span> {post.author} </span>
+                                    on
+                                    <span> {post.date}</span>
                                 </div>
                                 
                                 <p className="text-[13px] text-gray-600 leading-relaxed">

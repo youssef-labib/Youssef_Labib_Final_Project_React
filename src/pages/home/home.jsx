@@ -4,7 +4,7 @@ import CategoriesPage from './partials/categories';
 import ProductsPage from './partials/products';
 import CountdownSalePage from './partials/countdownSale';
 import OurBlog from './partials/ourblog';
-
+import Services from './partials/services';
 
 const HomePage = () => {
 
@@ -16,6 +16,7 @@ const HomePage = () => {
             <ProductsPage />
             <CountdownSalePage />
             <OurBlog />
+            <Services />
 
         </>
     );
