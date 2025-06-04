@@ -44,6 +44,7 @@ import visa from "../assets/images/visa.png.webp"
 import iconheader1 from "../assets/images/icon-header-01.png"
 import iconheader2 from "../assets/images/icon-header-02.png"
 import topweb from "../assets/images/contact_top.webp"
+import notfound from "../assets/images/not-found.webp"
 
 export default {
     banner02,
@@ -91,6 +92,7 @@ export default {
     visa,
     iconheader1,
     iconheader2,
-    topweb
+    topweb,
+    notfound
 }
 
