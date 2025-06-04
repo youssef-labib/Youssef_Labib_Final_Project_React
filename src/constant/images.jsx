@@ -43,6 +43,7 @@ import shopy8 from "../assets/images/shopy8.webp"
 import visa from "../assets/images/visa.png.webp"
 import iconheader1 from "../assets/images/icon-header-01.png"
 import iconheader2 from "../assets/images/icon-header-02.png"
+import topweb from "../assets/images/contact_top.webp"
 
 export default {
     banner02,
@@ -89,6 +90,7 @@ export default {
     shopy8,
     visa,
     iconheader1,
-    iconheader2
+    iconheader2,
+    topweb
 }
 

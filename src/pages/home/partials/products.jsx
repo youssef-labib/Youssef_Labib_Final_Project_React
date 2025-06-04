@@ -27,40 +27,43 @@ const ProductsPage = () => {
             : productData.filter((product) => product[activeFilter]);
 
     return (
-        <div className="max-w-[1200px] mx-auto py-10 px-4 sm:px-8 pb-25">
-            <h1 className="text-center font-bold text-3xl tracking-wide mb-6 mt-0 uppercase">
+        <div className="max-w-[1200px] mx-auto py-10 px-4 sm:px-6 lg:px-8">
+            <h1 className="text-center font-bold text-2xl sm:text-3xl tracking-wide mb-6 mt-0 uppercase">
                 FEATURED PRODUCTS
             </h1>
-            <div className="flex justify-center sm:gap-8 gap-3 mb-10 overflow-x-auto whitespace-nowrap sm:whitespace-normal px-2 sm:px-0">
-                {filters.map((filter) => (
-                    <a
-                        key={filter.key}
-                        href="#"
-                        onClick={e => { e.preventDefault(); setActiveFilter(filter.key); }}
-                        className={`sm:px-2 px-1 sm:text-[17px] text-[13px] font-normal transition-colors duration-200 no-underline ${activeFilter === filter.key ? 'text-black border-b-2 border-black' : 'text-[#222] border-b-0'}`}
-                    >
-                        {filter.label}
-                    </a>
-                ))}
+            <div className="flex justify-center mb-8 overflow-x-auto">
+                <div className="flex gap-3 sm:gap-8 px-2 sm:px-0">
+                    {filters.map((filter) => (
+                        <a
+                            key={filter.key}
+                            href="#"
+                            onClick={e => { e.preventDefault(); setActiveFilter(filter.key); }}
+                            className={`whitespace-nowrap px-2 py-1 text-[13px] sm:text-[17px] font-normal transition-colors duration-200 no-underline 
+                                      ${activeFilter === filter.key ? 'text-black border-b-2 border-black' : 'text-[#222] hover:text-[#e65540]'}`}
+                        >
+                            {filter.label}
+                        </a>
+                    ))}
+                </div>
             </div>
-            <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8">
+            <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-4 sm:gap-6 lg:gap-8">
                 {filteredProducts.map((product) => (
-                    <div key={product.id} className="w-full">
-                        <div className="relative w-full aspect-square mb-4">
+                    <div key={product.id} className="group relative">
+                        <div className="relative w-full aspect-square mb-4 overflow-hidden">
                             {product.sale && (
-                                <span className="absolute top-3 left-3 bg-[#e65540] text-white text-[13px] font-medium rounded px-3 py-0.5 z-10">
+                                <span className="absolute top-3 left-3 bg-[#e65540] text-white text-[11px] sm:text-[13px] font-medium rounded px-2 sm:px-3 py-0.5 z-10">
                                     Sale
                                 </span>
                             )}
                             <img
                                 src={product.image}
                                 alt={product.name}
-                                className="w-full h-full object-cover block rounded-none"
+                                className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"
                             />
                         </div>
                         <div className="text-left pl-1">
-                            <div className="text-[15px] text-[#222] mb-0.5">{product.name}</div>
-                            <div className={`text-[15px] font-normal ${product.sale ? 'text-[#e65540]' : 'text-[#222]' }`}>
+                            <div className="text-[13px] sm:text-[15px] text-[#222] mb-0.5 line-clamp-1">{product.name}</div>
+                            <div className={`text-[13px] sm:text-[15px] font-normal ${product.sale ? 'text-[#e65540]' : 'text-[#222]'}`}>
                                 {product.sale && (
                                     <span className="text-[#888] line-through mr-2">
                                         ${product.oldPrice?.toFixed(2)}

@@ -1,7 +1,7 @@
 [
   {
     "id": 1,
-    "image": "",
+    "image": "/src/assets/images/blog-01.jpg",
     "title": "Black Friday Guide: Best Sales & Discount Codes",
     "author": "fashe-theme Admin",
     "date": "Dec 28,2017",
@@ -9,7 +9,7 @@
   },
   {
     "id": 2,
-    "image": "",
+    "image": "/src/assets/images/blog-02.jpg",
     "title": "The White Sneakers Nearly Every Fashion Girls Own",
     "author": "fashe-theme Admin",
     "date": "Dec 28,2017",
@@ -17,7 +17,7 @@
   },
   {
     "id": 3,
-    "image": "",
+    "image": "/src/assets/images/blog-03.jpg",
     "title": "New York SS 2018 Street Style: By Annina Mislin",
     "author": "fashe-theme Admin",
     "date": "Dec 28,2017",
