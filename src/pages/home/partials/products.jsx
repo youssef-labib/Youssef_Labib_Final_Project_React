@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import Images from '../../../constant/images';
 import productJson from '../../../json/product.json';
+import { useCart } from '../../../context/CartContext';
 
 const filters = [
     { label: 'All', key: 'all' },
@@ -12,6 +13,7 @@ const filters = [
 const ProductsPage = () => {
     const [activeFilter, setActiveFilter] = useState('all');
     const [productData, setProductData] = useState([]);
+    const { addToCart } = useCart();
 
     useEffect(() => {
         const mappedProducts = productJson.map(product => ({
@@ -60,6 +62,14 @@ const ProductsPage = () => {
                                 alt={product.name}
                                 className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"
                             />
+                            <div className="absolute bottom-0 left-0 w-full transform translate-y-full group-hover:translate-y-[-30px] transition-transform duration-300 flex justify-center">
+                                <button
+                                    onClick={() => addToCart(product)}
+                                    className="w-[45%] py-3 bg-black text-white text-sm font-medium tracking-wider hover:bg-[#e65540] transition-colors duration-300 rounded-md"
+                                >
+                                    ADD TO CART
+                                </button>
+                            </div>
                         </div>
                         <div className="text-left pl-1">
                             <div className="text-[13px] sm:text-[15px] text-[#222] mb-0.5 line-clamp-1">{product.name}</div>

@@ -8,11 +8,11 @@ import ShopPage from './pages/shop/shop'
 import BlogPage from './pages/blog/blog'
 import AboutPage from './pages/about/about'
 import ContactPage from './pages/contact/contact'
+import { CartProvider } from './context/CartContext';
 
 const App = () => {
   return (
-    <>
-
+    <CartProvider>
       <Navbar />
 
       <Routes>
@@ -25,8 +25,7 @@ const App = () => {
       </Routes>
 
       <Footer />
-
-    </>
+    </CartProvider>
   );
 };
 

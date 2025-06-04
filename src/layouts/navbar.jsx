@@ -4,6 +4,8 @@ import { RxHamburgerMenu } from "react-icons/rx";
 import { IoMdClose } from "react-icons/io";
 import { IoIosArrowForward } from "react-icons/io";
 import Images from "../constant/images"
+import { useCart } from '../context/CartContext';
+import Cart from '../pages/shop/partials/Cart';
 
 const menuItems = [
     { name: 'Home', href: '/' },
@@ -17,6 +19,7 @@ const menuItems = [
 
 const Navbar = () => {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
+    const { toggleCart, getTotalItems } = useCart();
 
     const toggleMenu = () => {
         setIsMenuOpen(!isMenuOpen);
@@ -59,7 +62,17 @@ const Navbar = () => {
                     <div className="flex items-center justify-center gap-4 text-[#f5f5f5]">
                         <a href=""><img src={Images.iconheader1} alt="Search" /></a>
                         <span>|</span>
-                        <a href=""><img src={Images.iconheader2} alt="Cart" /></a>
+                        <button 
+                            onClick={toggleCart} 
+                            className="relative"
+                        >
+                            <img src={Images.iconheader2} alt="Cart" />
+                            {getTotalItems() > 0 && (
+                                <span className="absolute -top-2 -right-2 bg-[#e65540] text-white text-xs w-5 h-5 rounded-full flex items-center justify-center">
+                                    {getTotalItems()}
+                                </span>
+                            )}
+                        </button>
                     </div>
 
                     <button onClick={toggleMenu} className="text-2xl md:hidden ml-2">
@@ -82,7 +95,14 @@ const Navbar = () => {
                     <img src={Images.logo} alt="Fashe Logo" className="h-8" />
                     <div className="flex items-center gap-4">
                         <a href=""><img src={Images.iconheader1} alt="Search" className="h-6" /></a>
-                        <a href=""><img src={Images.iconheader2} alt="Cart" className="h-6" /></a>
+                        <button onClick={toggleCart} className="relative">
+                            <img src={Images.iconheader2} alt="Cart" className="h-6" />
+                            {getTotalItems() > 0 && (
+                                <span className="absolute -top-2 -right-2 bg-[#e65540] text-white text-xs w-5 h-5 rounded-full flex items-center justify-center">
+                                    {getTotalItems()}
+                                </span>
+                            )}
+                        </button>
                         <button onClick={toggleMenu} className="text-3xl ml-2"><IoMdClose /></button>
                     </div>
                 </div>
@@ -110,6 +130,8 @@ const Navbar = () => {
                     ))}
                 </nav>
             </div>
+
+            <Cart />
         </>
     );
 };
