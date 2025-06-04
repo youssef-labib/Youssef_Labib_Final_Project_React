@@ -10,7 +10,7 @@ const StoryPage = () => {
 
             <div className="about-story flex flex-col lg:flex-row container mx-auto py-12 px-8 md:px-12 lg:px-20 gap-16">
                 <div className="left-as w-full lg:w-2/5 aspect-square p-12 md:p-16 lg:p-20">
-                    <img src={Images.itemCart01} alt="about" className='w-full h-full object-cover' />
+                    <img src={Images.shopy4} alt="about" className='w-full h-full object-cover' />
                 </div>
 
                 <div className="right-as w-full lg:w-1/2 flex flex-col justify-center">

@@ -3,6 +3,9 @@ import HeroSection from './partials/hero';
 import CategoriesPage from './partials/categories';
 import ProductsPage from './partials/products';
 import CountdownSalePage from './partials/countdownSale';
+import OurBlog from './partials/ourblog';
+
+
 const HomePage = () => {
 
     return (
@@ -12,6 +15,7 @@ const HomePage = () => {
             <CategoriesPage />
             <ProductsPage />
             <CountdownSalePage />
+            <OurBlog />
 
         </>
     );
