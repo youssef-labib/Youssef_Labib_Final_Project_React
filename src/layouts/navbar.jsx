@@ -5,7 +5,7 @@ import { IoMdClose } from "react-icons/io";
 import { IoIosArrowForward } from "react-icons/io";
 import Images from "../constant/images"
 import { useCart } from '../context/CartContext';
-import Cart from '../pages/shop/partials/Cart';
+import Cart from '../pages/shop/partials/cart';
 import { useNavigate } from 'react-router-dom';
 
 const menuItems = [
