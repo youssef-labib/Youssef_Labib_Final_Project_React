@@ -3,7 +3,7 @@ import HeroSection from './partials/hero';
 import CategoriesPage from './partials/categories';
 import ProductsPage from './partials/products';
 import CountdownSalePage from './partials/countdownSale';
-import OurBlog from './partials/ourblog';
+import OurBlog from './partials/ourBlog';
 import Services from './partials/services';
 
 const HomePage = () => {
